@@ -1,22 +1,18 @@
 {
-  "name": "interactivesiteplan",
+  "name": "interactive-site-plan",
   "version": "1.0.0",
-  "description": "An interactive site plan app for managing exterior and interior door images.",
+  "description": "An interactive site plan for doors with exterior and interior images.",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . InteractiveSitePlan --platform=win32 --arch=x64 --out=dist --overwrite"
+    "deploy": "gh-pages -d ."
   },
-  "keywords": [
-    "electron",
-    "site-plan",
-    "interactive",
-    "doors"
-  ],
   "author": "Your Name",
   "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
     "electron": "^33.2.0",
-    "electron-packager": "^17.1.2"
+    "electron-packager": "^17.1.2",
+    "gh-pages": "^5.0.0"
   }
 }

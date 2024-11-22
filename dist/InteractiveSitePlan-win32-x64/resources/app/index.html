@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Site Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="map-container">
+        <!-- Site Plan Image -->
+        <img src="images/site-plan.png" alt="Site Plan" class="map-image" id="site-plan">
+
+        <!-- Popup for images -->
+        <div class="overlay"></div>
+        <div class="popup">
+            <div class="popup-content">
+                <img src="" alt="Exterior Door Image" id="exterior-image">
+                <img src="" alt="Interior Door Image" id="interior-image">
+            </div>
+            <div id="door-type" class="popup-type"></div>
+            <div class="popup-close">Close</div>
+        </div>
+
+
+        <!-- Door numbers with types -->
+        <div class="door-number" style="top: 958px; left: 1020px;" data-door-id="1" data-type="man-door">1</div>
+        <div class="door-number" style="top: 880px; left: 1020px;" data-door-id="2" data-type="man-door">2</div>
+        <div class="door-number" style="top: 890px; left: 1195px;" data-door-id="3" data-type="man-door">3</div>
+        <div class="door-number" style="top: 890px; left: 1440px;" data-door-id="4" data-type="man-door">4</div>
+        <div class="door-number" style="top: 840px; left: 1573px;" data-door-id="5" data-type="overhead">5</div>
+        <div class="door-number" style="top: 815px; left: 1574px;" data-door-id="6" data-type="overhead">6</div>
+        <div class="door-number" style="top: 792px; left: 1574px;" data-door-id="7" data-type="overhead">7</div>
+        <div class="door-number" style="top: 767px; left: 1574px;" data-door-id="8" data-type="overhead">8</div>
+        <div class="door-number" style="top: 743px; left: 1574px;" data-door-id="9" data-type="overhead">9</div>
+        <div class="door-number" style="top: 720px; left: 1574px;" data-door-id="10" data-type="overhead">10</div>
+        <div class="door-number" style="top: 699px; left: 1574px;" data-door-id="11" data-type="man-door">11</div>
+        <div class="door-number" style="top: 679px; left: 1555px;" data-door-id="12" data-type="man-door">12</div>
+        <div class="door-number" style="top: 567px; left: 1555px;" data-door-id="13" data-type="man-door">13</div>
+        <div class="door-number" style="top: 525px; left: 1555px;" data-door-id="14" data-type="man-door">14</div>
+        <div class="door-number" style="top: 456px; left: 1555px;" data-door-id="15" data-type="overhead">15</div>
+        <div class="door-number" style="top: 435px; left: 1570px;" data-door-id="16" data-type="overhead">16</div>
+        <div class="door-number" style="top: 314px; left: 1593px;" data-door-id="17" data-type="overhead">17</div>
+        <div class="door-number" style="top: 290px; left: 1593px;" data-door-id="18" data-type="man-door">18</div>
+        <div class="door-number" style="top: 262px; left: 1555px;" data-door-id="19" data-type="man-door">19</div>
+        <div class="door-number" style="top: 222px; left: 1344px;" data-door-id="20" data-type="double-swing">20</div>
+        <div class="door-number" style="top: 255px; left: 1140px;" data-door-id="21" data-type="double-swing">21</div>
+        <div class="door-number" style="top: 295px; left: 1122px;" data-door-id="22" data-type="double-swing">22</div>
+        <div class="door-number" style="top: 294px; left: 1075px;" data-door-id="23" data-type="double-swing">23</div>
+        <div class="door-number" style="top: 294px; left: 1050px;" data-door-id="24" data-type="double-swing">24</div>
+        <div class="door-number" style="top: 330px; left: 993px;" data-door-id="25" data-type="double-swing">25</div>
+        <div class="door-number" style="top: 385px; left: 993px;" data-door-id="26" data-type="double-swing">26</div>
+        <div class="door-number" style="top: 390px; left: 876px;" data-door-id="27" data-type="man-door">27</div>
+        <div class="door-number" style="top: 390px; left: 847px;" data-door-id="28" data-type="overhead">28</div>
+        <div class="door-number" style="top: 390px; left: 820px;" data-door-id="29" data-type="overhead">29</div>
+        <div class="door-number" style="top: 390px; left: 793px;" data-door-id="30" data-type="overhead">30</div>
+        <div class="door-number" style="top: 310px; left: 758px;" data-door-id="31" data-type="overhead">31</div>
+        <div class="door-number" style="top: 210px; left: 570px;" data-door-id="32" data-type="man-door">32</div>
+        <div class="door-number" style="top: 275px; left: 414px;" data-door-id="33" data-type="man-door">33</div>
+        <div class="door-number" style="top: 297px; left: 414px;" data-door-id="34" data-type="overhead">34</div>
+        <div class="door-number" style="top: 325px; left: 414px;" data-door-id="35" data-type="overhead">35</div>
+        <div class="door-number" style="top: 350px; left: 414px;" data-door-id="36" data-type="overhead">36</div>
+        <div class="door-number" style="top: 402px; left: 369px;" data-door-id="37" data-type="man-door">37</div>
+        <div class="door-number" style="top: 495px; left: 226px;" data-door-id="38" data-type="man-door">38</div>
+        <div class="door-number" style="top: 615px; left: 226px;" data-door-id="39" data-type="double-swing">39</div>
+        <div class="door-number" style="top: 640px; left: 226px;" data-door-id="40" data-type="double-swing">40</div>
+        <div class="door-number" style="top: 960px; left: 210px;" data-door-id="41" data-type="man-door">41</div>
+        <div class="door-number" style="top: 1035px; left: 570px;" data-door-id="42" data-type="overhead">42</div>
+        <div class="door-number" style="top: 1035px; left: 595px;" data-door-id="43" data-type="overhead">43</div>
+        <div class="door-number" style="top: 977px; left: 620px;" data-door-id="44" data-type="man-door">44</div>
+        <div class="door-number" style="top: 995px; left: 758px;" data-door-id="45" data-type="overhead">45</div>
+        <div class="door-number" style="top: 995px; left: 790px;" data-door-id="46" data-type="overhead">46</div>
+        <div class="door-number" style="top: 995px; left: 820px;" data-door-id="47" data-type="man-door">47</div>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

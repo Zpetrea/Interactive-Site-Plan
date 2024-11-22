@@ -1,0 +1,100 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* Allow scrolling if necessary */
+}
+
+.map-container {
+    position: relative;
+    width: 1920px; /* Set the desired large width */
+    height: 1080px; /* Set the desired large height */
+    margin: auto; /* Center the map container */
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+/* Door number styles */
+.door-number {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px; /* Uniform square size */
+    height: 18px; /* Uniform square size */
+    font-size: 14px;
+    font-weight: bold;
+    color: black; /* Black text */
+    background-color: white; /* White background */
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 0; /* No rounding, ensures square shape */
+}
+
+
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 40px; /* Add extra padding */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 95%; /* Scale based on viewport */
+    max-height: 95%; /* Ensure it fits within the viewport */
+    overflow: auto; /* Enable scrolling if content overflows */
+}
+
+
+.popup-content {
+    display: flex;
+    gap: 10px; /* Space between images */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content img {
+    max-width: 1000px; /* Increase max width */
+    max-height: 1000px; /* Increase max height */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    object-fit: contain; /* Ensure the image scales proportionally */
+}
+
+.popup-type {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.popup-close {
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: blue;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}

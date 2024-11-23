@@ -9,7 +9,7 @@ An interactive app to view a site's floor plan and display exterior and interior
 
 ## How to Run
 1. Clone the repository:
-git clone https://github.com/Zpetrea/SIte-Plan---Ext.Doors.git
+git clone https://github.com/Zpetrea/Interactive-Site-Plan.git
 
 2. Navigate to the project folder:
 cd SIte-Plan---Ext.Doors

@@ -99,7 +99,7 @@ body {
     z-index: 999;
 }
 .door-exception {
-    border: 2px solid blue !important;
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
+    border: 2px solid red !important;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
 }
 

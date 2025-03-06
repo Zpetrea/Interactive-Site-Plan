@@ -38,7 +38,28 @@ body {
     border-radius: 0; /* No rounding, ensures square shape */
 }
 
+/* Tooltip styles */
+.door-number::after {
+    content: attr(data-tooltip);
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 12px;
+    transition: opacity 0.3s ease-in-out;
+}
 
+.door-number:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
 
 /* Popup styles */
 .popup {
@@ -57,7 +78,6 @@ body {
     max-height: 95%; /* Ensure it fits within the viewport */
     overflow: auto; /* Enable scrolling if content overflows */
 }
-
 
 .popup-content {
     display: flex;
@@ -98,50 +118,11 @@ body {
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
+
+/* Exception doors - Red styling */
 .door-exception {
-    border: 2px solid red !important;
+    background-color: red !important;
+    color: white !important;
+    border: 2px solid darkred !important;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
 }
-.legend {
-    position: absolute;
-    bottom: 20px; /* Adjust to fit inside the white space */
-    left: 50%;
-    transform: translateX(-50%);
-    background: white;
-    padding: 10px 20px;
-    border: 2px solid black;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.legend h3 {
-    margin: 0 0 10px 0;
-    text-decoration: underline;
-}
-
-.legend-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 16px;
-}
-
-.legend-box {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    border: 1px solid black;
-}
-
-.regular {
-    background-color: white;
-}
-
-.exempt {
-    background-color: red;
-}
-
-

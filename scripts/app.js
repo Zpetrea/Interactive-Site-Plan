@@ -8,7 +8,7 @@ const closePopup = document.querySelector('.popup-close');
 const sitePlan = document.getElementById('site-plan');
 
 // List of doors that need the exception styling (Update this list based on the site plan)
-const exceptionDoors = [3, 7, 12, 18, 25]; // Replace with actual exception door numbers
+const exceptionDoors = [5,6,7,16,31,34,35,36,45]; // Replace with actual exception door numbers
 
 document.addEventListener("DOMContentLoaded", () => {
     // Highlight exception doors by adding a CSS class

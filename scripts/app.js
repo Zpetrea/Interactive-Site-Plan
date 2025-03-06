@@ -8,14 +8,15 @@ const closePopup = document.querySelector('.popup-close');
 const sitePlan = document.getElementById('site-plan');
 
 // List of doors that need the exception styling (Update this list based on the site plan)
-const exceptionDoors = [5,6,7,16,31,34,35,36,45]; // Replace with actual exception door numbers
+const exceptionDoors = [5, 6, 7, 16, 31, 34, 35, 36, 45]; // Replace with actual exception door numbers
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Highlight exception doors by adding a CSS class
+    // Highlight exception doors by adding a CSS class and setting tooltips
     doors.forEach(door => {
         const doorId = parseInt(door.getAttribute('data-door-id'), 10);
         if (exceptionDoors.includes(doorId)) {
             door.classList.add('door-exception');
+            door.setAttribute("data-tooltip", "Exempt Door"); // Set tooltip text
         }
     });
 

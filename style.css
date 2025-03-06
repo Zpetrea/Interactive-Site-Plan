@@ -102,4 +102,46 @@ body {
     border: 2px solid red !important;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
 }
+.legend {
+    position: absolute;
+    bottom: 20px; /* Adjust to fit inside the white space */
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.legend h3 {
+    margin: 0 0 10px 0;
+    text-decoration: underline;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.legend-box {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.regular {
+    background-color: white;
+}
+
+.exempt {
+    background-color: red;
+}
+
 

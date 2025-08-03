@@ -2,6 +2,11 @@
 
 An interactive app to view a site's floor plan and display exterior and interior images of doors by clicking on the corresponding door numbers.
 
+(This interaction is an easy and cost-effective alternative to more advanced Matterport solutions, where the user wants an aerial view of a space 
+and the ability to interactively view the space up close to showcase important figures/areas.)
+
+<img width="689" height="412" alt="siteplan" src="https://github.com/user-attachments/assets/eac7ed5d-6365-4bb3-a5b1-29b03668712d" />
+
 ## Features
 - Interactive site plan with clickable door numbers.
 - Pop-ups display exterior and interior images.
